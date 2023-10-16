@@ -1,0 +1,224 @@
+:root {
+    --main-color: #1892a1;
+    --secondary-color: #2cbae8;
+}
+
+body {
+    background: url('../images/img-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.img-logo {
+    width: 120px;
+    height: auto;
+}
+
+.navbar-title {
+    padding: 10px 50px;
+    background: url('../images/img-background-title.png');
+    background-size: 400px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navbar-title h1 {
+    text-align: center;
+    color: var(--main-color);
+    font-weight: bolder;
+    margin: 0;
+}
+
+.navbar-subtitle h2 {
+    padding-top: 10px;
+    text-align: center;
+    color: var(--main-color);
+    font-weight: 600;
+    margin: 0;
+    font-size: 20px;
+}
+
+.filter-date {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    border-radius: 0.25rem;
+    transition: all .15s ease-in-out;
+    color: #fff;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    padding-right: 130px;
+}
+
+.filter-date::-webkit-calendar-picker-indicator {
+    background-image: url('../images/img-icon-calendar.png');
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    display: block;
+    background-repeat:  no-repeat;
+    width: 30px;
+    height: 30px;
+    border-width: thin;
+    position: absolute;
+    left: 3%;
+}
+
+.filter-date::-webkit-datetime-edit-fields-wrapper {
+    position: relative;
+    left: 10%;
+}
+
+.filter-date::-webkit-datetime-edit {
+    position: relative;
+    left: 10%;
+}
+
+.current-course {
+    width: 80%;
+}
+
+.current-course-image {
+    width: 20%;
+}
+
+.card-border {
+    border: 3px solid var(--secondary-color);
+    background: transparent;
+    border-radius: 20px;
+}
+
+.card-vector {
+    width: 300px;
+}
+
+.current-course-title {
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.current-course-table-head {
+    margin: 0 auto;
+    padding: 3px 13px;
+    border-radius: 10px;
+    text-align: center;
+    white-space: nowrap;
+    background: var(--secondary-color);
+    color: #fff;
+    width: fit-content;
+}
+
+.table thead th {
+    border-bottom: none;
+    padding-top: 0;
+    padding-bottom: 8px;
+}
+
+.current-course-table td, .incoming-course-table td {
+    padding: 5px;
+}
+
+.current-course-table-body {
+    text-align: center;
+    border-radius: 10px;
+    background: #d4ebf9;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.course-video video {
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+.table-pagination {
+    text-align: center;
+}
+
+.table-pagination ul {
+    padding: 0;
+    margin: 0;
+}
+
+.table-pagination ul li {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-weight: 400;
+}
+
+.table-pagination ul li a,
+.table-pagination ul li span {
+    color: var(--secondary-color);
+    text-align: center;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 37px;
+    border-radius: 50%;
+    font-weight: 600;
+    border: 1px solid var(--secondary-color);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.incoming-course {
+    background: #e1eaf1;
+    border: none;
+    border-radius: 20px;
+}
+
+.incoming-course-title {
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--main-color);
+}
+
+.incoming-course-table-head {
+    margin: 0 auto;
+    padding: 3px 13px;
+    border-radius: 10px;
+    text-align: center;
+    white-space: nowrap;
+    background: #fff;
+    color: var(--main-color);
+    width: fit-content;
+}
+
+.incoming-course-table-body {
+    text-align: center;
+    border-radius: 10px;
+    background: var(--main-color);
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 1115px) and (min-width: 481px) {
+    .current-course {
+        width: 100%;
+    }
+}

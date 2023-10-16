@@ -1,0 +1,33 @@
+@media only screen and (max-width: 480px) {
+    .img-logo {
+        padding-top: 5px;
+    }
+
+    .current-course {
+        width: 100%;
+    }
+
+    .current-course-image {
+        max-height: 50%;
+    }
+
+    .navbar-title h1 {
+        font-size: 30px;
+    }
+
+    .navbar-subtitle h2 {
+        font-size: 20px;
+    }
+
+    .current-course-title {
+        font-size: 25px;
+    }
+
+    .filter-date {
+        padding-right: 20px;
+    }
+
+    .filter-date::-webkit-datetime-edit-fields-wrapper, .filter-date::-webkit-datetime-edit {
+        left: 10%;
+    }
+}
